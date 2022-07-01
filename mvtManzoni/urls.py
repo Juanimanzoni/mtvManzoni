@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from AppFlia.views import cargo_fliar1, cargo_fliar2, cargo_fliar3
+from AppFlia.views import cargo_fliar1, cargo_fliar2, cargo_fliar3, cargo_fliar_todos
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('familiar1/',cargo_fliar1),
     path('familiar2/',cargo_fliar2),
     path('familiar3/',cargo_fliar3),
+    path('familiar todos/',cargo_fliar_todos),
 ]
